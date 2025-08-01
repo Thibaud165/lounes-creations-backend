@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 app.use(cors()); // autoriser CORS pour toutes les origines (à sécuriser ensuite)
 app.use(express.json({ limit: "10mb" })); // pour recevoir les gros fichiers base64
